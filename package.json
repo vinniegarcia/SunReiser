@@ -6,10 +6,16 @@
   "license": "Mine!",
   "scripts": {
     "start": "react-native start",
-    "webpack": "webpack --config webpack.config.js --colors --progress"
+    "webpack": "webpack --config webpack.config.js --colors --progress",
+    "dev": "npm start && webpack --watch"
   },
   "dependencies": {
-    "react-native": "^0.3.0"
+    "moment": "^2.9.0",
+    "react-native": "^0.3.0",
+    "react-native-icons": "git://github.com/corymsmith/react-native-icons.git#22dc49d",
+    "tcomb": "^1.0.1",
+    "tcomb-form-native": "^0.1.6",
+    "tcomb-validation": "^1.0.3"
   },
   "devDependencies": {
     "anybar-webpack": "^1.0.4",
@@ -18,6 +24,8 @@
     "babel-runtime": "^5.0.0-beta1",
     "eslint": "^0.17.1",
     "eslint-plugin-react": "^1.6.1",
+    "imports-loader": "^0.6.3",
+    "supports-color": "^1.3.1",
     "webpack": "^1.7.3"
   }
 }
